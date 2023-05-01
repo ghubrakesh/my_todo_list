@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-(*9h0-%=bofhr=32-t%-8v02s!9u7vj=8#c$56cibb-dkogii(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh', '127.0.0.1']
 
 # Application definition
 
@@ -137,3 +136,8 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_URL = 'login'
+
+#static work 
+
+STATICFILES_DIRS = os.path.join(BASE_DIR,'static'),
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
