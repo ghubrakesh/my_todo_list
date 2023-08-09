@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 # Create your views here.
 from django.views.generic.detail import DetailView
 from django.views.generic.list import ListView
@@ -47,8 +47,14 @@ class CreateTask(LoginRequiredMixin, CreateView):
 
 class UpdateTask(LoginRequiredMixin, UpdateView):
     model = Task
-    fields =  ['title', 'description', 'complete']                    # all fields from models.py Task (for new form)
-    success_url = reverse_lazy('task')  # once the task is updated, reload the page
+    fields = ['title', 'description', 'complete']
+    success_url = reverse_lazy('task')
+
+    def get(self, request, *args, **kwargs):
+        obj = self.get_object()
+        if obj.user != request.user:
+            return HttpResponseRedirect(reverse_lazy('task'))  # Redirect to the task list page
+        return super().get(request, *args, **kwargs) # once the task is updated, reload the page
 
 class DeleteTask(LoginRequiredMixin, DeleteView):
     model = Task
