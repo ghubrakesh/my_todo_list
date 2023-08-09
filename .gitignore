@@ -1,1 +1,4 @@
 todoenv
+todolist_project/todo/__pycache__
+todolist_project/todo/migrations/__pycache__
+todolist_project/todolist_project/__pycache__
