@@ -12,6 +12,7 @@ from django.contrib.auth import login
 from .models import Task
 from django.urls import reverse_lazy
 from django.db import IntegrityError
+from django.core.exceptions import ObjectDoesNotExist
 
 
 class TaskList(LoginRequiredMixin, ListView):
@@ -51,8 +52,10 @@ class UpdateTask(LoginRequiredMixin, UpdateView):
     success_url = reverse_lazy('task')
 
     def get(self, request, *args, **kwargs):
-        obj = self.get_object()
-        if obj.user != request.user:
+        task_id = kwargs.get('pk')
+        try:
+            obj = self.model.objects.get(id=task_id, user=request.user)
+        except self.model.DoesNotExist:
             return HttpResponseRedirect(reverse_lazy('task'))  # Redirect to the task list page
         return super().get(request, *args, **kwargs) # once the task is updated, reload the page
 
