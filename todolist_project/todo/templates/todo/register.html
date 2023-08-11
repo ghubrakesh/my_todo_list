@@ -19,7 +19,7 @@
         <br><br>
         <input class="button" type="submit" value="Register">
     
-        <small><p>Have an account already? <a href="{% url 'login' %}">Login Now</a></p></small>
+        <small><p style="font-weight: bold;">Have an account already? <a class="button" href="{% url 'login' %}">Login Now</a></p></small>
 
         {% if form.errors %}
             <div class="alert alert-danger">
