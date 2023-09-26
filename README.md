@@ -16,9 +16,18 @@ This Django web application provides a platform to manage your to-do tasks effic
 
 ## Glimpse
 
-![Screenshot from 2023-08-09 22-59-34](https://github.com/ghubrakesh/my_todo_list/assets/102187286/ac1986a5-4b0b-4e7c-ba2b-d66ae2dcbd9f)
-![Screenshot from 2023-08-09 23-01-22](https://github.com/ghubrakesh/my_todo_list/assets/102187286/658bf5f1-c995-46dd-b024-e15bb1268e2e)
-![Screenshot from 2023-08-09 23-10-35](https://github.com/ghubrakesh/my_todo_list/assets/102187286/80af6e7f-497f-4fee-8121-4e8d12518a31)
+
+![Screenshot from 2023-09-27 03-13-25](https://github.com/ghubrakesh/my_todo_list/assets/102187286/2cc10fbc-346a-4bb0-b80c-a973245ad898)
+<p align="center" > login Screen</p>  
+</br>
+
+![Screenshot from 2023-09-27 03-17-25](https://github.com/ghubrakesh/my_todo_list/assets/102187286/9ec3a10e-9387-499f-ac02-a6b2962a1a05)
+<p align="center"> Task List</p>
+</br>
+
+![Screenshot from 2023-09-27 03-17-10](https://github.com/ghubrakesh/my_todo_list/assets/102187286/28a86e8e-1a0a-4967-99ca-6b298ad0c2e3)
+<p align="center"> Edit Task</p>
+</br>
 
 ## Contributing
 Contributions are welcome! If you have any suggestions or find any issues, please feel free to open an issue or submit a pull request.
