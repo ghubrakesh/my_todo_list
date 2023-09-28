@@ -29,9 +29,6 @@ This Django web application provides a platform to manage your to-do tasks effic
 <p align="center"> Edit Task</p>
 </br>
 
-## Contributing
-Contributions are welcome! If you have any suggestions or find any issues, please feel free to open an issue or submit a pull request.
-
 ## License
 This project is licensed under the [MIT License](https://opensource.org/license/mit/)
 
