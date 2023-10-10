@@ -1,6 +1,6 @@
 # My Todo List Web App
 
-A simple web application built using Django for managing your to-do tasks.
+A simple **Task Management System** as a Web Application built using Django for managing your to-do tasks.
 
 ## Overview
 
